@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#btnSubmit{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    background-color: rgb(0, 36, 98);
+    border: 1px solid rgb(124, 148, 225);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#btnSubmit:hover{
+    cursor: pointer;
+    background-color: rgb(64, 12, 166);
+    border: 1px solid rgb(124, 148, 225);
+    border-radius: 10px;
+    color: rgb(232, 238, 255);
+}
+
+#container{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(8, 162, 162, 0.207);
+    border-radius: 100px 50px 100px 50px;
+    padding: 1%;
+    margin: 2%;
+}
+
+#campoMensagem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#descricao{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+}
+
+#form{
+    width: auto;
+}
+
+#header{
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 2%;
+}
+
+#header-icons{
+    font-size: 2em;
+}
+
+#header a, #header-icons a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#header a:hover, #header-icons a:hover{
+    text-decoration: none;
+    color: rgb(64, 12, 166);
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer a{
+    text-decoration: none;
+    color:rgb(106, 43, 233);
+}
+
+#footer a:hover{
+    color:rgb(64, 12, 166);
+}
+
+#passos{
+    display: none;
+}
+
+#radioButtons{
+    padding: 1%;
+}
+
+@media (max-width: 768px){
+    #container{
+        flex-direction: column;
+        width: auto;
+    }
+    #descricao{
+        width: 90%;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 375px){
+    #container{
+        border-radius: 15px;
+    }
+}

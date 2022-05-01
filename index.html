@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e descodificador de textos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ccbcc27dc6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Archivo+Black&family=Barlow:wght@100&family=Cardo:wght@400;700&family=Comfortaa:wght@700&family=Fira+Sans:wght@300&family=IBM+Plex+Sans+Arabic:wght@700&family=IBM+Plex+Sans+KR:wght@300;700&family=Indie+Flower&family=Lato:wght@300;400;900&family=Open+Sans:wght@600&family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <a href="#"><h1> Codifique já!</h1></a>
+        <div id="header-icons">
+            <a href="https://github.com/letxns" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/leticia-smartins/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </header>
+    <section id="container">
+        <section id="descricao">
+            <h2>Qual tipo de criptografia você deseja aplicar?</h2>
+            <h3>Cifra de César</h3>
+            <p>Um dos mais antigos e conhecidos métodos de criptografia, a Crifra de César funciona através da substituição das letras do alfabeto.</p>
+            <h3>Base 64</h3>
+            <p>Base64 is a group of similar binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation. The term Base64 originates from a specific MIME content transfer encoding</p>
+        </section>
+        <form id="form">
+            <select id="tipoCodigo">
+                <option class="option" value="Selecione"> Selecionar</option>
+                <option class="option" value="cifraCesar"> Cifra César</option>
+                <option class="option" value="base64"> Base 64 </option>
+            </select><br><br>
+            <div id="passos">
+                <label for="passos"> Passos </label>
+                <input type="number" name="passos"><br>
+            </div>
+            <div id="radioButtons">
+                <input type="radio" name="tipoCodificacao" id="codificar" value="funcaoCodificar"> Codificar
+                <input type="radio" name="tipoCodificacao" id="decodificar" value="funcaoDecodificar"> Decodificar <br>
+            </div>
+            <div id="campoMensagem">
+                <label for="entradaMensagem"> Digite sua mensagem:</label>
+                <textarea name="entradaMensagem" type="text" rows="10" cols="40"> </textarea>
+                <label for="saidaMensagem"> Resultado:</label>
+                <textarea name="saidaMensagem" type="text" rows="10" cols="40"> </textarea>
+            </div> <br>
+            <button id="btnSubmit" type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer id="footer">
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/leticia-smartins/" target="_blank"> Leticia Martins</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
