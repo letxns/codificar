@@ -11,6 +11,8 @@
     border: 1px solid rgb(124, 148, 224);
     border-radius: 10px;
     color: rgb(255, 255, 255);
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
 }
 
 #btnSubmit:hover{
@@ -30,8 +32,8 @@
     align-items: center;
     background-color: rgba(8, 162, 162, 0.207);
     border-radius: 100px 50px 100px 50px;
-    padding: 1%;
-    margin: 2%;
+    padding: 0.5% 0 0.5% 0;
+    margin: 1%;
 }
 
 #campoMensagem{

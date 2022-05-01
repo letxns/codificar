@@ -1,4 +1,4 @@
-var selecionarMetodo = document.querySelector('#tipoCodigo');
+var selecionarCriptografia = document.querySelector('#tipoCodigo');
 var btn = document.querySelector('#btnSubmit');
 //var radioButtons = document.getElementById('radioButtons');
 
@@ -6,17 +6,28 @@ tipoCodigo.addEventListener('change', function(event){
     var tipoSelecionado = event.target.value;
     if(tipoSelecionado == "cifraCesar"){
         passos.style.display = "block";
-    }else if(tipoSelecionado != "cifraCesar"){
+        btnSubmit.setAttribute('click', cifraCesar());
+    }else if(tipoSelecionado == "base64"){
+        passos.style.display = "none";
+        btnSubmit.setAttribute('click', base64());
+    } else{
         passos.style.display = "none";
     }
 });
 
 codificar.addEventListener('click', function(){
-    btnSubmit.innerText = "Codificar";
+    btnSubmit.innerText = "CODIFICAR";
 });
 
 decodificar.addEventListener('click', function(){
-    btnSubmit.innerText = "Decodificar";
+    btnSubmit.innerText = "DECODIFICAR";
+    decodificar();
 });
 
-//Projeto em que mensagens poderão ser codificadas e decodificadas através de duas formas: utilizando a cifra de César e a Base 64.
+function cifraCesar(){
+    alert("OI CESAR");
+}
+
+function base64(){
+    alert("OI BASE64");
+}
