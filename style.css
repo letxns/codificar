@@ -34,6 +34,7 @@
     border-radius: 100px 50px 100px 50px;
     padding: 0.5% 0 0.5% 0;
     margin: 1%;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #campoMensagem{
@@ -100,10 +101,34 @@
 
 #passos{
     display: none;
+    width: 97%;
+    padding: 1.2%;
 }
 
-#radioButtons{
+#tipoCodigo{
+    width: 100%;
     padding: 1%;
+}
+
+#passos, #tipoCodigo{
+    background-color: rgb(247, 251, 255);
+    border: 1px solid rgb(46, 1, 74);
+    border-radius: 5px;
+    height: auto;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#tipoCodigo:hover{
+    cursor: pointer;
+}
+
+
+#radioButtons{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px){

@@ -21,31 +21,31 @@
         <section id="descricao">
             <h2>Qual tipo de criptografia você deseja aplicar?</h2> <br>
             <h3>Cifra de César</h3> <br>
-            <p>Um dos mais antigos e conhecidos métodos de criptografia, a Crifra de César funciona através da substituição das letras do alfabeto.</p> <br>
+            <p>Um dos mais antigos e conhecidos métodos de criptografia, a Cifra de César funciona através da substituição das letras do alfabeto.</p> <br>
             <h3>Base 64</h3> <br>
-            <p>Base64 is a group of similar binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation. The term Base64 originates from a specific MIME content transfer encoding</p>
+            <p>Base64 is a group of similar binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation. The term Base64 originates from a specific MIME content transfer encoding</p><br>
         </section>
         <form id="form">
             <select id="tipoCodigo">
                 <option class="option" value="Selecione"> Selecionar</option>
                 <option class="option" value="cifraCesar"> Cifra César</option>
-                <option class="option" value="base64"> Base 64 </option>
+                <option class="option" value="base64"> Base 64</option>
             </select><br><br>
-            <div id="passos">
-                <label for="passos"> Passos </label>
-                <input type="number" name="passos"><br>
+            <div>
+                <label for="passos"></label>
+                <input type="number" name="passos" placeholder="Passos" id="passos"><br><br>
             </div>
             <div id="radioButtons">
-                <input type="radio" name="tipoCodificacao" id="codificar" value="funcaoCodificar"> Codificar
-                <input type="radio" name="tipoCodificacao" id="decodificar" value="funcaoDecodificar"> Decodificar <br> <br>
+                <div><input type="radio" name="tipoCodificacao" id="codificar" value="funcaoCodificar"> Codificar</div>
+                <div><input type="radio" name="tipoCodificacao" id="decodificar" value="funcaoDecodificar"> Decodificar</div> <br> <br>
             </div>
             <div id="campoMensagem">
-                <label for="entradaMensagem"> Digite sua mensagem:</label>
-                <textarea name="entradaMensagem" type="text" rows="8" cols="40"> </textarea><br>
+                <label for="entradaMensagem">Digite sua mensagem: </label>
+                <textarea name="entradaMensagem" type="text" rows="7" cols="40" id="textoEntrada" placeholder=" Mensagem:"></textarea><br>
                 <label for="saidaMensagem"> Resultado:</label> 
-                <textarea name="saidaMensagem" type="text" rows="8" cols="40"> </textarea>
+                <textarea name="saidaMensagem" type="text" rows="7" cols="40" id="textoSaida" placeholder=" Resultado:"></textarea>
             </div> <br>
-            <button id="btnSubmit" type="submit">ENVIAR</button>
+            <button id="btnSubmit" type="submit" onclick="enviar()">ENVIAR</button>
         </form>
     </section>
     <footer id="footer">
