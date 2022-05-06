@@ -30,6 +30,7 @@
     justify-content: space-around;
     text-align: center;
     align-items: center;
+    align-content: center;
     background-color: rgba(8, 162, 162, 0.207);
     border-radius: 100px 50px 100px 50px;
     padding: 0.5% 0 0.5% 0;
@@ -135,15 +136,18 @@
     #container{
         flex-direction: column;
         width: auto;
+        padding: 2%;
+        border-radius: 40px;
     }
     #descricao{
         width: 90%;
-        margin-top: 5%;
+        text-align: justify;
     }
 }
 
 @media (max-width: 375px){
     #container{
         border-radius: 15px;
+        padding: 3%;
     }
 }
