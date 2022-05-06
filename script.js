@@ -30,20 +30,21 @@ btn.addEventListener('click', function(e){
 });
 
 function base64(){
-    if(codificar.checked && tipoCodigo.value == "base64"){
+    if(codificar.checked){
         return output.value = btoa(input.value);
-    } else if(decodificar.checked && tipoCodigo.value == "base64"){
+    }else if(decodificar.checked){
         return output.value = atob(input.value);
-    }
-}
+
+    } 
+}       
 
 function cifraCesar(){
-    var input = input.value.split('');
+    var valor = input.value.split('');
     var incremento =  parseInt(passos.value);
     if (codificar.checked){
-        output.value = cesarCodifica(input, incremento);
+        output.value = cesarCodifica(valor, incremento);
     } else if (decodificar.checked){
-        output.value = cesarDecodifica(input, incremento);
+        output.value = cesarDecodifica(valor, incremento);
     }
 }
 
